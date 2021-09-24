@@ -4,6 +4,7 @@
 
 #include <linux/ftrace.h>
 #include <linux/uaccess.h>
+#include <linux/string.h>
 
 struct ftrace_hook {
     
@@ -40,7 +41,7 @@ static struct kprobe kp = {
 #endif
 
 #if NEW_CALL_CONVENTION
-#define SYSCALL_NAME_CONVENTION(name) ("__x64_" name)
+#define SYSCALL_NAME_CONVENTION(name) (strncmp(name, "sys", 3) ?  name : "__x64_" name)
 #else
 #define SYSCALL_NAME_CONVENTION(name) (name)
 #endif

