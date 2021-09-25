@@ -1,11 +1,6 @@
          
-▄▄▄  ▄ •▄  ▄▄·  ▄ .▄ ▄▄▄·  ▐ ▄    ▄ •▄       
-▀▄ █·█▌▄▌▪▐█ ▌▪██▪▐█▐█ ▀█ •█▌▐█   █▌▄▌▪▪     
-▐▀▀▄ ▐▀▀▄·██ ▄▄██▀▐█▄█▀▀█ ▐█▐▐▌   ▐▀▀▄· ▄█▀▄ 
-▐█•█▌▐█.█▌▐███▌██▌▐▀▐█ ▪▐▌██▐█▌   ▐█.█▌▐█▌.▐▌
-.▀  ▀·▀  ▀·▀▀▀ ▀▀▀ · ▀  ▀ ▀▀ █▪ ▀ ·▀  ▀ ▀█▄▀▪
 
-- amazing linux rootkit aimed at all fresh kernel versions. !!!STILL IN DEVELOPMENT!!!
+**RKCHAIN** - amazing linux rootkit aimed at all fresh kernel versions. !!!STILL IN DEVELOPMENT!!!
 
 Please do not use in military or secret service organizations,
    or for illegal purposes.
